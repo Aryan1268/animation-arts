@@ -1,0 +1,118 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.hero-sec{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px; */
+    background-image: url("https://images.pexels.com/photos/28248765/pexels-photo-28248765/free-photo-of-blue-and-orange-abstract-painting.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.hero-logo-hdg{
+    padding-top: 40px;
+    font-size: 1.7em;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero-content-hdg{
+    font-size: 7em;
+    color: white;
+    animation: herocontent 2s ease-out;
+}
+
+.hero-link{
+   padding-bottom: 10px;
+}
+
+a{
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.secound-sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.secound-left-sec{
+    position: relative;
+    /* flex: 1; */
+   
+}
+
+.secound-left-sec img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scnd-img-top{
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    animation: secoundsec 2s ease-out;
+}
+
+.scnd-img-bottom{
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    animation: secoundsec 2s ease-out;
+}
+
+.secound-right-sec{
+    display: flex;
+    flex-direction: column;
+}
+
+.secound-hdg{
+    font-size: 4em;
+    font-weight: 400;
+    animation: secoundsec 2s ease-out;
+}
+
+.secound-right-cnt{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@keyframes herocontent {
+    0%{
+       opacity: 0;
+       transform: translateY(40px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes secoundsec {
+    0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
